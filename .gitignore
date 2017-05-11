@@ -1,2 +1,6 @@
 download/*
 *.model
+*.pkl
+*.svm
+*.train
+*.test
