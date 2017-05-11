@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,11 +17,20 @@ Mail
 　山田廣作氏　７５歳（やまだ・こうさく＝音楽プロデューサー）８日、虚血性心不全で死去。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　告別式は近親者で行う。
 　ロックバンド、ゴダイゴを成功させ、島倉千代子さんの「人生いろいろ」や天童よしみさんの「珍島（チンド）物語」などのヒット曲の制作に携わった。近年では、チベット仏教最高指導者のダライ・ラマ１４世の詞に、米国のグループ、ピーター、ポール＆マリーで活躍したピーター・ヤーロウさんが曲をつけて歌った「決してあきらめないで」などの作品を手がけた。
+
+2017年05月09日 19時57分
+Copyright © The Yomiuri Shimbun
+
 
 

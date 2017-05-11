@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,10 +17,19 @@ Mail
 　１０日午後３時２２分頃、ＪＲ京浜東北線の上中里駅で人身事故が発生した。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　この影響で同線は上下線で一時、運転を見合わせたが、同４時２１分頃に運転を再開した。
+
+2017年05月10日 16時26分
+Copyright © The Yomiuri Shimbun
+
 
 

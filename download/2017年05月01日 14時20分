@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -24,13 +23,20 @@ Mail
 
 
 
+
+
+        AD2.init(ads.p_rectangle);
+        
+
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
+
+
+
+
 ＴＯＥＦＬ　ｉＢＴテスト
-
-
-
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
-
-
 
 【公式サイトＵＲＬ】
 
@@ -45,5 +51,9 @@ googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
 【紹介文】
 
 　ＴＯＥＦＬテストは、世界で最も多くの受験者に利用されてきた英語を母語としない人々を対象に実施している国際基準の英語能力測定試験です。主催・運営団体は、米国非営利教育団体Ｅｄｕｃａｔｉｏｎａｌ　Ｔｅｓｔｉｎｇ　Ｓｅｒｖｉｃｅ（ＥＴＳ）で、そのスコアは１３０か国、９，０００以上の大学や機関で活用されており、これまでに３，０００万人以上の方が受験しています。　日本では、国際教育交換協議会（ＣＩＥＥ）日本代表部が１９８１年から「ＴＯＥＦＬテスト日本事務局」として公式情報発信、広報活動、ＥＴＳ公式プロダクトの普及促進活動等を行っています。
+
+2017年05月01日 14時20分
+Copyright © The Yomiuri Shimbun
+
 
 

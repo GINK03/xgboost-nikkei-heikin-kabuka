@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,10 +17,19 @@ Mail
 　日本ラグビー協会は８日、トップリーグの２０１７～１８年シーズンの日程を発表した。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　８月１８日に開幕し、１６チームがリーグ戦を変則的に１３試合ずつ戦った後、順位決定トーナメントを実施。上位４チームによるトーナメントが今季から日本選手権を兼ね、トップリーグ王者が日本選手権王者となる。決勝は来年１月１３日に秩父宮で行われる。
+
+2017年05月08日 20時00分
+Copyright © The Yomiuri Shimbun
+
 
 

@@ -8,10 +8,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -20,15 +19,22 @@ Mail
 
 
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
-
-
-
-
-
 
 
 １８日、ロンドンの首相府前で、緊急演説するメイ首相（ロイター）
+
+
+
+
+        AD2.init(ads.p_rectangle);
+        
+
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
+
+
 
 
 
@@ -150,6 +156,10 @@ EU単一市場から撤退する
 2
 
 
+
+
+2017年05月08日 11時30分
+Copyright © The Yomiuri Shimbun
 
 
 

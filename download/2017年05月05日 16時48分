@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,10 +17,19 @@ Mail
 　【ヒューストン（米テキサス州）＝三室学】米大リーグは４日、カブスの上原がフィリーズ戦で延長十三回に８番手で登板し、今季初勝利（２敗）を挙げた。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　１回を無安打無失点１奪三振に抑え、その裏に味方が敵失でサヨナラ勝ちした。マーリンズの田沢はレイズ戦の八回に４番手で登板し、１回無安打無失点。イチローは出場しなかった。アストロズの青木もレンジャーズ戦で出番がなかった。
+
+2017年05月05日 16時48分
+Copyright © The Yomiuri Shimbun
+
 
 

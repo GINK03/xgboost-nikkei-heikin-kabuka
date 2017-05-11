@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,10 +17,19 @@ Mail
 　サッカーのイタリア１部、ローマに所属する元イタリア代表ＦＷフランチェスコ・トッティ（４０）が今季限りで現役を引退すると、英ＢＢＣ（電子版）などが３日、報じた。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　クラブ幹部が同日、来季は契約を更新せず、別の形でクラブに残ると明らかにした。トッティは１９９３年のデビューからローマ一筋で、２０００～０１年シーズンに中田英寿氏と共にリーグ優勝。代表では０６年ワールドカップ（Ｗ杯）ドイツ大会優勝に貢献した。（モナコ　風間徹也）
+
+2017年05月04日 00時37分
+Copyright © The Yomiuri Shimbun
+
 
 

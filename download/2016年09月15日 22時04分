@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,10 +17,19 @@ Mail
 　【リオデジャネイロ＝畔川吉永】リオデジャネイロ・パラリンピック大会は１５日、新競技のカヌー女子カヤックシングル（運動機能障害）決勝が行われ、初出場の瀬立（せりゅう）モニカ（筑波大）は８人中８位だった。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　１８歳の瀬立はこの競技に日本人として唯一出場。レース後、「決勝の舞台で漕げたうれしさと（決勝で）ビリになった悔しい気持ちがある。悔しさを力に変えていきたい。あしたから（次回の）東京大会に向けて頑張りたい」と話した。
+
+2016年09月15日 22時04分
+Copyright © The Yomiuri Shimbun
+
 
 

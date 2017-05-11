@@ -7,10 +7,9 @@
 
 
 
-Twitter
-Facebook
-Line
-Mail
+
+
+
 
 
 
@@ -18,10 +17,19 @@ Mail
 　日本マクドナルドホールディングスは１０日、２０１７年１２月期連結決算の業績予想を上方修正したと発表した。
 
 
+        AD2.init(ads.p_rectangle);
+        
 
-googletag.cmd.push(function() { googletag.display('dfp_middle_Wbanner'); });
+        AD2.cAds();
+        
+
+AD2.dBanner(0,'prect');
 
 
 　最終利益は２月時点の予想より６０億円多い１４５億円（前期比２・７倍）と予想している。肉厚のハンバーガー「グラン」シリーズなど、新商品の販売が好調で、店舗改装の効果で客足も増えているためだ。
+
+2017年05月10日 18時38分
+Copyright © The Yomiuri Shimbun
+
 
 
