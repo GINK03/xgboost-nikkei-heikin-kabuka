@@ -71,3 +71,6 @@ Ft(x)=Ft−1(x)+ηαtft(x)
 Tは回帰儀、wは葉の重み
 この式を近似して回帰着を構築する
 
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25982957/d3728e86-371b-11e7-80c4-e02413569dc4.png">
+</p>
