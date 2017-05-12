@@ -36,15 +36,19 @@ t番目のデータを次のような微分が成り立つはずである
 
 ## Grandient Tree Boosting
 Gradient Boostingを効率的に扱う式として、このような式が提案された。
-∑j=1T∑i∈IjL(yi,Ft−1(xi)+wj)
-
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25983596/c49f8eb8-3720-11e7-97b8-8c9db39d6113.png">
+</p>
 x_i, y~\_iを最小化するような木を構築した後、 w\_jをこの式を最小化するのだが、この式が解析的に解ける場合
-∑i=1NL(yi,Ft−1(xi)+ft(xi))
-
+<p aling="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25983615/df04bcb0-3720-11e7-9781-f4c4f79b0c53.png">
+</p>
 これを最小化すればいい
 
 ## Learning Rate
-Ft(x)=Ft−1(x)+ηαtft(x)
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25983653/13a4f6ce-3721-11e7-87b0-1dd94be3a289.png">
+</p>
 
 このような式で更新するのだが、ηが学習率に相当して、0.01~0.005がよいということになている。
 
