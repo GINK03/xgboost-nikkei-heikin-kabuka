@@ -74,3 +74,9 @@ Tは回帰儀、wは葉の重み
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/4949982/25982957/d3728e86-371b-11e7-80c4-e02413569dc4.png">
 </p>
+
+# 図解によるイメージ
+- このようになっているとイメージすると良いかもしれない
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25983556/7b481a96-3720-11e7-8189-f75dc35d0a78.png">
+</p>
