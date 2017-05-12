@@ -84,3 +84,59 @@ Tは回帰儀、wは葉の重み
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/4949982/25983556/7b481a96-3720-11e7-8189-f75dc35d0a78.png">
 </p>
+
+# Step By Step解説
+
+## step.1 
+新聞の記事を分かち書きにする
+```sh
+$ python3 deal.py --step1
+```
+
+## step.2
+単語をindex化する
+```sh
+$ python3 deal.py --step2
+```
+
+## step.3
+日経平均のデータから目的となる数字を計算する
+```sh
+$ python3 deal.py --step3
+```
+
+## step.4
+XGBoost(バイナリ)で読める形に変換します
+```sh
+$ python3 deal.py --step4
+```
+なお、次の日のKPIを予想するのにこのようなオプションも使えます
+```sh
+$ python3 deal.py --step4alt
+```
+## step.5
+教師データとテストデータに分割します
+```sh
+$ python3 deal.py --step5
+```
+
+## step.6
+学習します
+```sh
+$ python3 deal.py --step6
+```
+
+## step.7
+モデルをダンプします
+```sh
+$ python3 deal.py --step7
+```
+
+## step.8
+f値を出力します
+f値は何回判別の基準となる素性として選択されたかで、その事象を説明する大きさを示しはしませんが、その組成で判別すると、うまく切れるということを示しています。
+```sh
+$ python3 deal.py --step8 | less
+```
+
+# 結果
