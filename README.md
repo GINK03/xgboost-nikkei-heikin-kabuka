@@ -61,7 +61,7 @@ Ft(x)=Ft−1(x)+ηαtft(x)
 </p>
 
 これで、f_T(x_i)を求めることが可能になる
-<p aling="center">
+<p align="center">
   <img src="https://cloud.githubusercontent.com/assets/4949982/25981262/185ee22c-370f-11e7-91e6-e2c45776325a.png">
 </p>
 
