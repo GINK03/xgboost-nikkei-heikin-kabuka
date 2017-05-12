@@ -29,4 +29,45 @@ t番目のデータを次のような微分が成り立つはずである
 </p>
 
 これをT回反復を終えるまで回すとすると、次の式になる
-FT(x)=f0(x)+∑t=1Tαtft(x)
+
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25979901/33de6a80-3706-11e7-8c7c-c5c444430816.png">
+</p>
+
+## Grandient Tree Boosting
+Gradient Boostingを効率的に扱う式として、このような式が提案された。
+∑j=1T∑i∈IjL(yi,Ft−1(xi)+wj)
+
+x_i, y~\_iを最小化するような木を構築した後、 w\_jをこの式を最小化するのだが、この式が解析的に解ける場合
+∑i=1NL(yi,Ft−1(xi)+ft(xi))
+
+これを最小化すればいい
+
+## Learning Rate
+Ft(x)=Ft−1(x)+ηαtft(x)
+
+このような式で更新するのだが、ηが学習率に相当して、0.01~0.005がよいということになている。
+
+## Newton Boosting
+最小化に使うアルゴリズムはGradient DescentではなくてNewton法を用いる
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25981189/a1efc5a2-370e-11e7-8663-11629d9d59e7.png">
+</p>
+この式を直接最小化する
+
+二次近似するとこのようになる
+<p align="center">
+ <img src="https://cloud.githubusercontent.com/assets/4949982/25981221/d80c3134-370e-11e7-8f12-8e7b72c9cdbc.png">
+</p>
+
+これで、f_T(x_i)を求めることが可能になる
+<p aling="center">
+  <img src="https://cloud.githubusercontent.com/assets/4949982/25981262/185ee22c-370f-11e7-91e6-e2c45776325a.png">
+</p>
+
+
+## XGBoost
+
+Tは回帰儀、wは葉の重み
+この式を近似して回帰着を構築する
+
