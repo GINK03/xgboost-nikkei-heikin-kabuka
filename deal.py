@@ -19,8 +19,9 @@ def step1():
       if date_contexts.get(date) is None: 
         date_contexts[date] = ""
       date_contexts[date] += " " + context
-  """ contextsが5124語になるように調整 """
-  date_contexts = { date: contexts[:5124] for date, contexts in date_contexts.items() }
+  # """ contextsが50000語になるように調整 """
+  # date_contexts = { date: contexts[:50000] for date, contexts in date_contexts.items() }
+  date_contexts = { date: contexts for date, contexts in date_contexts.items() }
   open("var/date_contexts.pkl", "wb").write(pickle.dumps(date_contexts)) 
 
 """ 単語をindex化する """
@@ -102,6 +103,35 @@ def step4alt():
       tosave = "%d %s\n"%(kpi, feats)
       f.write(tosave)
 
+""" xgboostの形式に変換する, 予想に使う素性はnoun（名詞）に限定する """
+def step4noun():
+  date_kpi      = pickle.loads(open("var/date_kpi.pkl", "rb").read())
+  date_contexts = pickle.loads(open("var/date_contexts.pkl", "rb").read())
+  term_index    = pickle.loads(open("var/term_index.pkl", "rb").read())
+  noun_freq     = pickle.loads(open("noun_freq.pkl", "rb").read())
+  with open("var/xgboost.svm", "w") as f:
+    for date, kpi in sorted(date_kpi.items(), key=lambda x:x[0]):
+      ts        = date.split("-")
+      prev_date = "%s-%s-%02d"%( ts[0], ts[1], int(ts[-1]) - 1 )
+      """ 日付づらしは面倒なので対応しない """
+      if prev_date == "00":
+        continue
+      
+      print(date, prev_date ,kpi)
+      id_freq = {}
+      try:
+        for term, freq in Counter(date_contexts[prev_date].split()).items():
+          if noun_freq.get(term) is None:
+            continue
+          id_freq[ term_index[term] ] = math.log(freq + 1) # adhoc
+      except KeyError as e:
+        print(e)
+        continue
+      
+      feats  = " ".join( ["%d:%04f"%(index, freq) for index, freq in id_freq.items()] )
+      tosave = "%d %s\n"%(kpi, feats)
+      f.write(tosave)
+
 """ トレインとテストに分割する """
 def step5():
    sets = open("var/xgboost.svm", "r").read().split("\n")
@@ -155,6 +185,9 @@ if __name__ == '__main__':
 
   if '--step4alt' in sys.argv:
     step4alt()
+
+  if '--step4noun' in sys.argv:
+    step4noun()
   
   if '--step5' in sys.argv:
     step5()

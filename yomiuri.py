@@ -76,7 +76,7 @@ if '-c' in sys.argv:
     [links.add(link) for link in set([a['href'] for a in soup.find_all('a', href=True)])]
 
   while links != set():
-    with concurrent.futures.ProcessPoolExecutor(max_workers=256) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=64) as executor:
       for res in executor.map(parser, links):
         ls, link = res
         finished.add(link)
