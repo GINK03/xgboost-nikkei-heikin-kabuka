@@ -12,7 +12,7 @@
 何をやっているかというと、弱い決定木を前の出力を次の出力に合算して、次の決定木に引き継がせているのだが、次の式で最小化すべき目的関数を再度構築している
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25950213/1ca9754c-3695-11e7-8d94-c8c4aca56642.png">
+  <img widht="150px" src="https://cloud.githubusercontent.com/assets/4949982/25950213/1ca9754c-3695-11e7-8d94-c8c4aca56642.png">
 </p>
 
 N個のデータがあった場合、各データについてFという関数を仮定して、最小化していく問題とみなせる（ここはよくある問題設定）  
@@ -20,34 +20,34 @@ N個のデータがあった場合、各データについてFという関数を
 t番目のデータを次のような微分が成り立つはずである  
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25950236/2e7ac898-3695-11e7-8a66-9d3705210dad.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25950236/2e7ac898-3695-11e7-8a66-9d3705210dad.png">
 </p>
 
 この微分をされている要素をyiとすると、次の値を最小化すれば良いことがわかる  
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25950261/47d3caf6-3695-11e7-80b9-e2f4d8572b36.png">
+  <img width="150px" src="https://cloud.githubusercontent.com/assets/4949982/25950261/47d3caf6-3695-11e7-80b9-e2f4d8572b36.png">
 </p>
 
 これをT回反復を終えるまで回すとすると、次の式になる  
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25979901/33de6a80-3706-11e7-8c7c-c5c444430816.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25979901/33de6a80-3706-11e7-8c7c-c5c444430816.png">
 </p>
 
 ## Grandient Tree Boosting
 Gradient Boostingを効率的に扱う式として、このような式が提案された。  
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25983596/c49f8eb8-3720-11e7-97b8-8c9db39d6113.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25983596/c49f8eb8-3720-11e7-97b8-8c9db39d6113.png">
 </p>
 x\_i, y~\_iを最小化するような木を構築した後、 w\_jをこの式を最小化するのだが、この式が解析的に解ける場合  
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25983615/df04bcb0-3720-11e7-9781-f4c4f79b0c53.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25983615/df04bcb0-3720-11e7-9781-f4c4f79b0c53.png">
 </p>
 これを最小化すればいい  
 
 ## Learning Rate
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25983653/13a4f6ce-3721-11e7-87b0-1dd94be3a289.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25983653/13a4f6ce-3721-11e7-87b0-1dd94be3a289.png">
 </p>
 
 このような式で更新するのだが、ηが学習率に相当して、0.01~0.005がよいということになている。  
@@ -55,18 +55,18 @@ x\_i, y~\_iを最小化するような木を構築した後、 w\_jをこの式�
 ## Newton Boosting
 最小化に使うアルゴリズムはGradient DescentではなくてNewton法を用いる  
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25981189/a1efc5a2-370e-11e7-8663-11629d9d59e7.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25981189/a1efc5a2-370e-11e7-8663-11629d9d59e7.png">
 </p>
 この式を直接最小化する  
 
 二次近似するとこのようになる  
 <p align="center">
- <img src="https://cloud.githubusercontent.com/assets/4949982/25981221/d80c3134-370e-11e7-8f12-8e7b72c9cdbc.png">
+ <img width="300px" src="https://cloud.githubusercontent.com/assets/4949982/25981221/d80c3134-370e-11e7-8f12-8e7b72c9cdbc.png">
 </p>
 
 これで、f_T(x_i)を求めることが可能になる
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25981262/185ee22c-370f-11e7-91e6-e2c45776325a.png">
+  <img width="250px" src="https://cloud.githubusercontent.com/assets/4949982/25981262/185ee22c-370f-11e7-91e6-e2c45776325a.png">
 </p>
 
 
@@ -76,7 +76,7 @@ Tは回帰儀、wは葉の重み
 この式を近似して回帰着を構築する  
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/4949982/25982957/d3728e86-371b-11e7-80c4-e02413569dc4.png">
+  <img width="200px" src="https://cloud.githubusercontent.com/assets/4949982/25982957/d3728e86-371b-11e7-80c4-e02413569dc4.png">
 </p>
 
 # 図解によるイメージ
@@ -89,56 +89,60 @@ Tは回帰儀、wは葉の重み
 
 ## step.1 
 新聞の記事を分かち書きにする
+
 ```sh
 $ python3 deal.py --step1
 ```
 
 ## step.2
 単語をindex化する
+
 ```sh
 $ python3 deal.py --step2
 ```
 
 ## step.3
 日経平均のデータから目的となる数字を計算する
+
 ```sh
 $ python3 deal.py --step3
 ```
-
 ## step.4
 XGBoost(バイナリ)で読める形に変換します
+
 ```sh
 $ python3 deal.py --step4
 ```
 なお、次の日のKPIを予想するのにこのようなオプションも使えます
+
 ```sh
 $ python3 deal.py --step4alt
 ```
 ## step.5
 教師データとテストデータに分割します
+
 ```sh
 $ python3 deal.py --step5
 ```
-
 ## step.6
 学習します
+
 ```sh
 $ python3 deal.py --step6
 ```
-
 ## step.7
 モデルをダンプします
+
 ```sh
 $ python3 deal.py --step7
 ```
-
 ## step.8
 f値を出力します
 f値は何回判別の基準となる素性として選択されたかで、その事象を説明する大きさを示しはしませんが、その組成で決定木を作ると、うまく切れるということを示しています。
+
 ```sh
 $ python3 deal.py --step8 | less
 ```
-
 # 結果
 4年分ぐらいのデータに関して、検証を行いました。
 8割を学習用データ、2割をテストデータとして、ランダムに分割したものです
@@ -183,7 +187,7 @@ ROUND300, max_depth=3000000, eta = 0.025, regresion:linearでRSMEと呼ばれる
 ### 名詞だけでXGBoostで回帰する
 精度だけ見るとずっと落ちてしまうことがわかりました  
 rmseも1500ぐらいまでしか下がりません  
-反応する素性はこのうになっております  
+反応する素性はこのようになっております  
 
 ```sh
 告示 57.0
@@ -204,7 +208,7 @@ rmseも1500ぐらいまでしか下がりません
 なり 50.0
 ...
 ```
-数字でないので、企業名がおおくでるかと思いましたが、そのようなことはないようです。 
+企業名がおおくでるかと思いましたが、そのようなことはないようです。 
 
 ## 自己回帰のように予想する
 つまり、前日までの株価が既知だとします。    
@@ -212,6 +216,7 @@ rmseも1500ぐらいまでしか下がりません
 F(n)はn日の予想株価  
 Rはn日の実測値  
 Sはn日の新聞紙面  
+
 ```sh
 F(n) = R(n-1) + S(n-1)
 ```
@@ -220,6 +225,7 @@ F(n) = R(n-1) + S(n-1)
 RMSEは200程度まで下がることを確認しました。 
 つまり、平均200円前後しか、ずれずに予想できると言うことです。  
 一番性能が良いモデルです。  
+
 ```sh
 __SELF_PREV__ 18957.0
 dBanner 515.0
@@ -265,7 +271,7 @@ RMSE200程度（日に200円程度しかずれない）
 ## 結論
 
 新聞のコンテンツから、予想することもできるが、自己回帰予想が良さそうに見えるけど、新聞を入れても変わらないので、新聞は特徴量として役不足感がある。  
-xgboostのチューニングやアルゴリズムを工夫して、素性選択を頑張るより、大量の素性を入れていくことで精度を上げて行くほうが筋が良いように見えて、TVya
+xgboostのチューニングやアルゴリズムを工夫して、素性選択を頑張るなど、大量の素性を入れていくことで精度を上げて行くほうが筋が良いように見ます。
 日経新聞、インターネット記事などをとにかく量を放り込んで予想するのがよいのかなぁって思ってます（かなり長い期間必要ですが）  
 
 自動売買プログラムでは、買うタイミングと売るタイミングが分かればよいから、別の問題になるがそういうタスクでは有効かもしれない。  
@@ -281,8 +287,7 @@ p値とのこのfscore（決定木における特徴量重要度）に関して�
 [ここです](https://github.com/GINK03/xgboost-nikkei-heikin-kabuka)
 
 ## 参考文献
-[1] [ランダムフォレスト系ツールで特徴量の重要度を測る](http://qiita.com/TomokIshii/items/290adc16e2ca5032ca07)  
-[2] [Gradient Boosted Tree (Xgboost) の取り扱い説明書](http://qiita.com/nykergoto/items/7922a8a3c1a7b622b935)  
+[1] [ランダムフォレスト系ツールで特徴量の重要度を測る](http://qiita.com/TomokIshii/items/290adc16e2ca5032ca07)
+[2] [Gradient Boosted Tree (Xgboost) の取り扱い説明書](http://qiita.com/nykergoto/items/7922a8a3c1a7b622b935) 
 [3] [Gradient Boosting と XGBoost](https://zaburo-ch.github.io/post/xgboost/)  　
  
-
