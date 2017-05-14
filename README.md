@@ -239,6 +239,7 @@ p値とのこのfscore（決定木における特徴量重要度）に関して�
  
 ## 参考文献
 [1] [ランダムフォレスト系ツールで特徴量の重要度を測る](http://qiita.com/TomokIshii/items/290adc16e2ca5032ca07)
+[2] [Gradient Boosted Tree (Xgboost) の取り扱い説明書](http://qiita.com/nykergoto/items/7922a8a3c1a7b622b935)
  　
  
 
