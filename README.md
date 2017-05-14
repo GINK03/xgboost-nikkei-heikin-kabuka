@@ -7,7 +7,7 @@
 
 ## Boostingの基礎理論
 非常に丁寧にかつよくまとまっているサイトがあるので、体系的に理解したい人は、リンクからたどると良です。  
-[Gradient Boosting と XGBoost](https://zaburo-ch.github.io/post/xgboost/)  
+[Gradient Boosting と XGBoost](https://zaburo-ch.github.io/post/xgboost/)(今回、数式的な理解で大変参考にさせていただきました、ありがとうございます)  
 
 何をやっているかというと、弱い決定木を前の出力を次の出力に合算して、次の決定木に引き継がせているのだが、次の式で最小化すべき目的関数を再度構築している
 
@@ -279,7 +279,7 @@ p値とのこのfscore（決定木における特徴量重要度）に関して�
  
 ## 参考文献
 [1] [ランダムフォレスト系ツールで特徴量の重要度を測る](http://qiita.com/TomokIshii/items/290adc16e2ca5032ca07)  
-[2] [Gradient Boosted Tree (Xgboost) の取り扱い説明書](http://qiita.com/nykergoto/items/7922a8a3c1a7b622b935)
+[2] [Gradient Boosted Tree (Xgboost) の取り扱い説明書](http://qiita.com/nykergoto/items/7922a8a3c1a7b622b935)  
 [3] [Gradient Boosting と XGBoost](https://zaburo-ch.github.io/post/xgboost/)  　
  
 
